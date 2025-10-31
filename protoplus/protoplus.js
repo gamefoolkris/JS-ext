@@ -1,6 +1,5 @@
 /* ~~~ Settings ~~~ */
-var protoPlusFlags = [];
-protoPlusFlags.push("enforceUTF"); // Enforces that the document is the correct encoding. Comment out to disable.
+var protoPlusFlags = protoPlusFlags || ["enforceUTF"];
 
 
 /* ~~~ Enforce UTF ~~~ */
