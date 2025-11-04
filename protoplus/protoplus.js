@@ -37,6 +37,9 @@ HTMLElement.prototype.getElementsByName = function(elementName) {
 
 
 /* ~~~ String ~~~ */
+String.prototype.toCodePoints = function() {
+  return Array.from(this).map(char => `\\u{${char.codePointAt(0).toString(16)}}`);
+}
 String.prototype.format = function(...options) {
   let format = {}
   let alias = (x) => {

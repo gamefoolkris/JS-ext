@@ -16,6 +16,7 @@ Adds a bunch of prototype methods.
 * `HTMLElement.prototype.getElementById(elementId)` - Behaves the same as `document.getElementById()` but only returns if the target element is a descendant of `HTMLElement`
 * `HTMLElement.prototype.getElementsByName(elementName)` - Ditto, returns a list of all descendants with the given name.
 ### String
+* `String.prototype.toCodePoints()` - Converts a string into an array of unicode code points. (`"Hello World!".toCodePoints()` = `["\u{48}","\u{65}","\u{6c}","\u{6c}","\u{6f}","\u{20}","\u{57}","\u{6f}","\u{72}","\u{6c}","\u{64}","\u{21}"]`)
 * `String.prototype.format(bold, italic)` - Returns the string, but **bold**, *italic*, or ***both***, using a unicode character set (Must use UTF-8 because it uses characters outside of the BMP)
 * `String.prototype.titleCase()` - Capitalizes the first letter of each word.
 * `String.prototype.shuffle()` - Self-explanatory.
